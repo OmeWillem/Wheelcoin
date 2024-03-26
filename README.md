@@ -1,5 +1,6 @@
 # Wheelcoin
 > Deze plugin is gemaakt voor [SeyoxMT]("https://discord.gg/seyox")
+
 Dit is een wheelcoin plugin gemaakt als proefproject, er zijn een paar leuke features zoals:
 - MongoDB support
 - Ingame wheelcoin editor

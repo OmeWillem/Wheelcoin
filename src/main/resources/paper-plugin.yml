@@ -1,0 +1,5 @@
+name: Wheelcoin
+version: '${project.version}'
+main: dev.willem.wheelcoin.Wheelcoin
+loader: dev.willem.wheelcoin.WheelcoinLoader
+api-version: '1.20'

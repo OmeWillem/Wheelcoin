@@ -90,6 +90,13 @@ public final class CoinGUI {
     private LinkedList<ItemStack> fetchPool() {
         LinkedList<ItemStack> pricePool = new LinkedList<>();
         for (int i = 0; i<8; i++) {
+            if (databaseManager.getCachedStacks().isEmpty()) {
+                pricePool.add(new ItemStack(Material.STONE));
+                Wheelcoin.getInstance().getLogger().warning("There are no specified items in the database. Using placeholder item...");
+
+                continue;
+            }
+
             pricePool.add(databaseManager.getCachedStacks().get(rand.nextInt(databaseManager.getCachedStacks().size())));
         }
 
